@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen"/>
+    <node pkg="drone_navigation" type="slam_node.py" name="slam_node" output="screen"/>
+    <node pkg="drone_navigation" type="obstacle_detection.py" name="obstacle_detection_node" output="screen"/>
+    <node pkg="drone_navigation" type="autonomous_navigation.py" name="autonomous_navigation" output="screen"/>
+</launch>
